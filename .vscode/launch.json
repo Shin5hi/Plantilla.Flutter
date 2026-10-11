@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run flutter_app on dev flavor",
+            "cwd": "packages/flutter_app",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor=dev"
+            ]
+        },
+        {
+            "name": "Run flutter_app on stg flavor",
+            "cwd": "packages/flutter_app",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor=stg"
+            ]
+        },
+        {
+            "name": "Run flutter_app on prod flavor",
+            "cwd": "packages/flutter_app",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor=prod"
+            ]
+        },
+        {
+            "name": "Run widget_catalog",
+            "cwd": "packages/widget_catalog",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart"
+        },
+    ]
+}
