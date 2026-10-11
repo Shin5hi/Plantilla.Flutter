@@ -1,0 +1,20 @@
+name: authenticator
+description: A Flutter package to handle user authentication using Firebase.
+version: 1.0.0
+resolution: workspace
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  collection: ^1.18.0
+  firebase_auth: ^6.1.0
+  firebase_core: ^4.2.0
+  flutter:
+    sdk: flutter
+  google_sign_in: ^6.3.0
+
+dev_dependencies:
+  altive_lints: ^2.1.0
+  flutter_test:
+    sdk: flutter
