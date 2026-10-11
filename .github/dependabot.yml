@@ -1,0 +1,56 @@
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "pub"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pub"
+    directory: "/packages/flutter_app"
+    schedule:
+      interval: "weekly"
+    groups:
+      riverpod-dependencies:
+        patterns:
+          - "*riverpod*"
+      freezed-dependencies:
+        patterns:
+          - "freezed*"
+          - "json_annotation"
+          - "json_serializable"
+      dependencies-patch:
+        patterns:
+          - "*"
+        update-types:
+        - "patch"
+
+  - package-ecosystem: "pub"
+    directory: "/packages/themes"
+    schedule:
+      interval: "weekly"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pub"
+    directory: "/packages/util"
+    schedule:
+      interval: "monthly"
+    groups:
+      dependencies-patch:
+        patterns:
+          - "*"
+        update-types:
+        - "patch"

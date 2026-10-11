@@ -1,0 +1,7 @@
+include: package:altive_lints/altive_lints.yaml
+analyzer:
+  plugins:
+    - custom_lint
+  exclude:
+    - "**/gen/*.dart"
+    - "**/firebase_options_*.dart"
